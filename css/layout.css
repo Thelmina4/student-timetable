@@ -1,0 +1,89 @@
+/* MAIN */
+
+/* HEADER */
+
+/* NAV BAR */
+
+/*NAV STYLING*/
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Smiley Icon */
+.icon-smile {
+  background-color: black;
+  fill: yellow;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+/*Containers*/
+.container-outer {
+  width: 80%; 
+  font-size: 1.1rem;
+  white-space: normal;
+  align-items: center;         /*  vertically center text */
+  justify-content: center;       /* horizontally center text */
+  margin: 1px auto;
+}
+/* For the subject buttons */
+.container-buttons {
+  text-align: center;
+}
+/* 
+.container-buttons .row {
+  margin-bottom: 5px;  space between rows */
+/*} */
+
+.subject-btn {
+  width: 80%;
+  height: 70px;                  /* your chosen height */
+  font-size: 1.1rem;
+  white-space: normal;
+  word-wrap: break-word;
+  display: flex;                 /* key line — makes centering easy */
+  align-items: center;           /* vertically center text */
+  justify-content: center;       /* horizontally center text */
+  margin: 1px auto;
+  text-align: center;
+}
+
+.subject-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/*Take me to the top button Thelma*/
+#myBtn {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #83C5BE; 
+  opacity: 0.6; /* Set the opacity so that it becomes more transparent*/
+   /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  /* Add a dark-grey background on hover */
+  background-color: #555; 
+  opacity: 0.9;
+  color: whitesmoke;
+}
+
+/*Test if the button works and then hide this after */
+/* #myBtn {
+  display: block !important;
+} */

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="page for the students of COMSCI2 to find when exams are on, projects are due and homework in Semester one. ">
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Comsci 2: What do we have on this semester?</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/ -->
+
+    <!-- Fonts -->
+     <!-- I have too many s, pick one and move on-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_circle_up"> -->
+
+<!-- Bootstrap 5.3.3 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Version infomation
+    File: ./whatson.html
+    Author: Thelma Clarke
+    
+    Creation: 8th of October 2025
+    Last Modified: 08/10/2025
+    Description: Personal Project; Make a page that the students can see important dates
+    https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this 
+
+    Plan:
+    Pages:
+    Whatson is the main page with my containers to copy & paste from
+    Index: Home page
+      - home page has a disclaimer that this is student work only & so
+        is not affiliated with the college whatsoever and the information might be incorrect
+        the students should look up their own info and make sure that they are fully informed of what is going on
+        in the modules and in the courses. 
+        Having said that that i wll try to update the information as I get it.
+    
+    Deadlines page, the nav bar will bring you to the # of either one:
+      - Split it into 2
+        Homework: 
+        - Is the weekly homework that we have to complete./ exams : 
+        Exams
+        - Important dates: for projects and upcoming exams
+    Modules info: 
+      - this page will not be changed or need to be updated. 
+        it will be the exam weight and how they are spread out. 
+        Lecturer name & email
+
+    Nav bar: 
+    links to the separate areas on the page.
+    eg 
+
+    Body -> main
+    homework/weekly tasks & due date w time
+    Exams:
+    eg week 7 container
+      -> inside week 7 each exam / quiz
+      -> pertinent info: when, where, how long, are there sample quizes, worth % of overall
+      
+    -->
+
+  <link rel="stylesheet" href="css/layout.css" > 
+
+  </head>
+<body>
+
+<main>
+  <!-- NAV BAR-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+  </svg>StudyTrack</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="deadlines.html#homework">Homework</a> -->
+            <a class="nav-link" href="#homework">Homework</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="deadlines.html#exams-projects">Exams/Projects</a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link" href="modules.html">Modules Info</a>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER-->
+
+  <!-- CONTAINER FOR THE INTRO -->
+
+  <div class="container-outer pt-5">
+
+    <div class="px-5 py-1">
+
+      <h1>COMSCI2 Important dates</h1>
+      <p>I made this so that we could keep all our deadline information in one place, 
+        instead of spread over Loop, Notion, our note pads, Whatsapp, your mind palace or where ever it might be spread out.</p>
+    </div>
+    
+    <div class="px-5 py-1">
+
+      <h2>Why did I make this?</h2>
+      <p>Teamwork. If we all work together, then we might get out of this without PTSD. 
+        </p>
+
+        <blockquote class="blockquote">
+            "It went green, it <i>finally</i> went  <mark class="bg-success text-white">green !!!"</mark>
+        </blockquote>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="px-5 py-1">
+      <h2>Disclaimer!</h2>
+      <p>This page was created only as a pet project. It is not meant to be used as a study guide. 
+        And I don't claim that I will always be correct. It is simply my understanding of what the lecturers said.</p>
+      <p>If I do make a mistake, its's not the end of the world. Just tell me and I will update. You all know how to contact me I'm sure. </p>
+      <p>Please note that while I will make sure to update all the information, that it is not going to be perfect and mistakes might be made.</p>
+      <p>Make sure that you keep yourself informed of...</p>
+      <ul>
+
+        <li>Homework that needs to be completed </li>
+        <li>The exam times and dates </li>
+        <li>Any projects deadlines and what is needed for them </li>
+
+      </ul>
+      <br>
+      <p>Yes, I do realise that this page is super rudimentary and many of you could have done much better.
+        <br>I only learned a little html & css last year. And let's face it, this was made mainly with bootstrap. 
+        I'll update this <small><i>(or won't)</i></small> as I learn more.
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-smile" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"/>
+        </svg>
+
+        <br>I think that for now I'll just give you the info and beautify as I go.
+      </p>
+    </div>
+  </div>
+  <!-- end of the index page -->
+
+  <!-- Make the page for homework -->
+  <div class="container-outer pt-5">
+    <div class="px-5 py-1 ">
+      <h1 id="homework">Homework</h1>
+      <p>Below you can find the <b>homework</b> due <b>times</b> and <b>dates</b> for each module</p>
+
+      <div class="container-buttons mt-1">
+        <div class="row">
+          <div class="col">
+            <a href="#maths" class="btn btn-success subject-btn">Linear Algebra</a>
+          </div>
+          <div class="col">
+            <a href="#c" class="btn btn-success subject-btn">System Programming</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="#python" class="btn btn-success subject-btn">Computer Programming 3</a>
+          </div>
+          <div class="col">
+            <a href="#sa" class="btn btn-success subject-btn">Systems Analysis</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="#probs" class="btn btn-success subject-btn">Probability & Statistics</a>
+          </div>
+          <div class="col">
+            <a href="#devops" class="btn btn-success subject-btn">Intro to DevOps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linear Algebra -->
+    <div class="px-5 py-1 ">
+      <h2 class="module-title" id="maths">Linear Algebra</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Homework</th>
+              <th>Released</th>
+              <th>Due</th>
+              <th>Where?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tutorial</td>
+              <td>Fridays</td>
+              <td>Wednesdays?</td>
+              <td>
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- System Programming -->
+    <div class="px-5 py-1 ">
+      <h2 class="module-title" id="c">System Programming</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Homework</th>
+              <th>Released</th>
+              <th>Due</th>
+              <th>Where?</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Labs</td>
+              <td>Thursdays @ 3pm</td>
+              <td>Sundays @ midnight</td>
+              <td>
+                <a href="https://csc1038.computing.dcu.ie/index.html" class="btn btn-success">CSC1038</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Computer Programming -->
+    <div class="px-5 py-1 ">
+      <h2 class="module-title" id="python">Computer Programming</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Homework</th>
+              <th>Released</th>
+              <th>Due</th>
+              <th>Where?</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Labs</td>
+              <td>Mondays @ 10am</td>
+              <td>Sundays @ midnight</td>
+              <td>
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- System Analysis -->
+    <div class="px-5 py-1 ">
+      <h2 class="module-title" id="sa">System Analysis</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Homework</th>
+              <th>Released</th>
+              <th>Due</th>
+              <th>Where?</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Quiz</td>
+              <td>Fridays 12am - 11.59pm</td>
+              <td>1 hour to complete</td>
+              <td>
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>              
+            </tr>
+            <tr>
+              <td>Journal</td>
+              <td>Thursday week before</td>
+              <td>Following wednesday @ 11.59pm</td>
+              <td>
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>             
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Probability & statistics -->
+    <div class="px-5 py-1 ">
+      <h2 class="module-title" id="probs">Probability & Statistics</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Homework</th>
+              <th>Released</th>
+              <th>Due</th>
+              <th>Where?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Labs</td>
+              <td>Tuesdays</td>
+              <td>None</td>
+              <td>
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>              
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Intro to DevOps -->
+    <div class="px-5 py-1 ">
+      <h2 class="module-title" id="devops">Intro to DevOps</h2>
+      <div class="table-responsive ">
+        <table class="table table-bordered align-middle text-center table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Homework</th>
+              <th>Released</th>
+              <th>Due</th>
+              <th>Where?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Practice labs</td>
+              <td>Mondays</td>
+              <td>Tuesday night</td>
+              <td>
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>              
+            </tr> 
+            <tr>
+              <td>Lab Exams 9%</td>
+              <td>Wednesday 11am</td>
+              <td>Wednesday 1pm, 2 hrs to complete</td>
+              <td>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#devopsModal">
+                  Click me
+                </button>
+                <!-- Need to figure out how to space these a bit -->
+                <a href="https://loop.dcu.ie/login/index.php" class="btn btn-success">Loop</a>
+              </td>              
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- deadlines page -->
+  <!-- Plan
+    1. container1 w description 
+
+    2. inner container2 w outer wk number
+    3. inner container3 
+        - date/ time highlighted text
+        - module 
+        - exam/quix/project 
+        - modal popup for further info
+          inside modal : table 5 rows w 2 cols each
+            - Where
+            - internet access
+            - loop access
+            - bring in notes? 
+            - sample up on loop? -->
+  <div class="container-outer pt-5">
+
+    <div class="px-5 py-1 ">
+      <h1 id="deadlines">Projects / Exam times deadlines</h1>
+      <p>Below you can find the <b>Projects / Exam details</b> sorted by which week it's in</p>
+
+      <div class="container-buttons mt-3">
+        <div class="row">
+          <div class="col">
+            <a href="#wk7" class="btn btn-success subject-btn">Week 7</a>
+          </div>
+          <div class="col">
+            <a href="#wk8" class="btn btn-success subject-btn">Week 8</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="#wk9" class="btn btn-success subject-btn">Week 9</a>
+          </div>
+          <div class="col">
+            <a href="#wk10" class="btn btn-success subject-btn">Week 10</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="#wk11" class="btn btn-success subject-btn">Week 11</a>
+          </div>
+          <div class="col">
+            <a href="#wk12" class="btn btn-success subject-btn">Week 12</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="px-5 py-1">
+<div class="container my-4 module-container">
+  <h2 class="module-title">Linear Algebra</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle text-center">
+      <thead class="table-success">
+        <tr>
+          <th>Homework</th>
+          <th>Released</th>
+          <th>Due</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tutorial Sheet</td>
+          <td>Fridays</td>
+          <td>Wednesdays?</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="container my-4 module-container">
+  <h2 class="module-title">Linear Algebra</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle text-center">
+      <thead class="table-success">
+        <tr>
+          <th>Homework</th>
+          <th>Released</th>
+          <th>Due</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tutorial Sheet</td>
+          <td>Fridays</td>
+          <td>Wednesdays?</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  </div> -->
+  <div class="container-outer pt-5">
+         
+    <div class="px-5 py-1">
+      <ul class="list-group">
+        <li class="list-group-item" id="wk7">Week 7
+                  
+          <ul class="list-group">
+            <li class="list-group-item">Next Tuesday the 21st of Oct @ 10am</li>
+            <li class="list-group-item">Probability Exam
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#probsExam">
+                Click for more info
+              </button>
+            </li> 
+
+          </ul>
+          <ul class="list-group">
+            <li class="list-group-item">Next Wednesday at 9am</li>
+            <li class="list-group-item">What: Maths quiz
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                Click for more info
+              </button>
+            </li> 
+          </ul>   
+        </li>  
+      </ul> 
+    </div>
+
+    <!-- The Modals -->
+
+    <!-- DEVOPS WARNING -->
+    <div class="modal fade" id="devopsModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">WARNING!!!</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>She sometimes put up an email after the labs asking that we send her the URL via a Google form 
+              <br>
+            We lose the 9% if we have the work done, but miss the email. <br>
+            There is no set tme that she might send out the email <br>
+            If you see the email, put the form link on the Whatsapp group <br>
+            And then one of the class reps can put it in the announcements. <br>
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>  
+
+    <!-- MODALS FOR WEEK 7 -->
+    <div class="modal fade" id="probsExam">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Any Extra info</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>10% of the final grade. <br>
+            He will provide samples on loop.  <br>
+            Can bring in 2 pages, front & back of notes.  <br>
+            Everything up to week 5.  <br>
+            Notes will be on loop during exam. No other access to internet. <br>
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>  
+    <!-- 2nd modal -->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">I can input info here</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>  
+                          
+    <div class="px-5 py-1">
+              
+      <ul class="list-group">
+        <li class="list-group-item">September: Events     <span class="label label-danger ">Sold Out!</span></li>
+        <li class="list-group-item">October: Events     <span class="label label-danger">Sold Out!</span></li> 
+        <li class="list-group-item">November <span class="badge">Not many events left in November</span></li> 
+        <li class="list-group-item">December <span class="badge">Check below for our favourites</span></li> 
+      </ul>
+    </div>
+    
+    <div class="px-5 py-1">         
+      <ul class="list-group">
+        <li class="list-group-item">September: Events     <span class="label label-danger ">Sold Out!</span></li>
+        <li class="list-group-item">October: Events     <span class="label label-danger">Sold Out!</span></li> 
+        <li class="list-group-item">November <span class="badge">Not many events left in November</span></li> 
+        <li class="list-group-item">December <span class="badge">Check below for our favourites</span></li> 
+      </ul>
+    </div>
+  </div>
+  
+
+    <!-- FOOTER -->
+
+          <footer class="footer p-5">
+               
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Thelma Clarke</h2>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact me:</h5>
+                    <p>
+                        Find me in the Labs or Library 
+                    </p>
+                    <p>
+                        Or send me a Whatsapp 
+                    </p>
+                </div>
+
+                <!-- <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline footer-links">
+                        <li class="list-inline-item">
+                          <a href="#">
+                                <i class="fab fa-facebook"></i>
+                          </a>
+                          </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                                <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                                <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                          </a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 StudyTrack. All rights reserved.</p>
+                </div>
+                <!-- Come back to this, might make a site map, do I need a privacy policy? -->
+                <!-- <div class="col-md-6 text-end">
+                    <ul class="list-inline footer-links">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                Terms of Service
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                Sitemap
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                
+            </div>
+                       <!--top of the page: Thelma -->
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- Scripts should come *after* HTML elements they use -->
+  <script src="js/script.js"></script>
+
+        </div>
+
+    </footer>
+    
+
+</main>
+
+</body>
+
+  </html>
