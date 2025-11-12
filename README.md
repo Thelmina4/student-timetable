@@ -1,7 +1,8 @@
 Author: Thelma Clarke
 SID: 19746069
-
+URL: https://thelmina4.github.io/student-timetable/
 This is a website for the COMSCI2 students 2025
+
 
 Inside it there are a few .html pages
 index

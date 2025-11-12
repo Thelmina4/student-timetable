@@ -83,6 +83,23 @@
   color: whitesmoke;
 }
 
+.btn-course {
+  display: inline-block;
+  background-color: #6c757d; /* Smoky grey */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-course:hover {
+  background-color: #5a6268; /* slightly darker smoky tone on hover */
+  color: #fff;
+}
+
+
 /*Test if the button works and then hide this after */
 /* #myBtn {
   display: block !important;

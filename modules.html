@@ -23,46 +23,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Version infomation
-    File: ./whatson.html
+    File: ./modules.html
     Author: Thelma Clarke
     
     Creation: 8th of October 2025
-    Last Modified: 08/10/2025
+    Last Modified: 12/11/2025
     Description: Personal Project; Make a page that the students can see important dates
-    https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this 
-
-    Plan:
-    Pages:
-    Whatson is the main page with my containers to copy & paste from
-    Index: Home page
-      - home page has a disclaimer that this is student work only & so
-        is not affiliated with the college whatsoever and the information might be incorrect
-        the students should look up their own info and make sure that they are fully informed of what is going on
-        in the modules and in the courses. 
-        Having said that that i wll try to update the information as I get it.
-    
-    Deadlines page, the nav bar will bring you to the # of either one:
-      - Split it into 2
-        Homework: 
-        - Is the weekly homework that we have to complete./ exams : 
-        Exams
-        - Important dates: for projects and upcoming exams
-    Modules info: 
-      - this page will not be changed or need to be updated. 
-        it will be the exam weight and how they are spread out. 
-        Lecturer name & email
-
-    Nav bar: 
-    links to the separate areas on the page.
-    eg 
-
-    Body -> main
-    homework/weekly tasks & due date w time
-    Exams:
-    eg week 7 container
-      -> inside week 7 each exam / quiz
-      -> pertinent info: when, where, how long, are there sample quizes, worth % of overall
-      
+    https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this    
     -->
 
   <link rel="stylesheet" href="css/layout.css" > 
@@ -117,16 +84,90 @@
 
   <!-- CONTAINER FOR THE INTRO -->
 
-  <div class="container-outer pt-5">
+  <!-- Replace your container-outer DIV with this more flexible layout -->
+<div class="container-fluid px-3 py-4"> 
+  <!-- container-fluid ensures full-width on mobile, with just a little padding -->
+  
+    <div class="px-5 py-5">
+    <h1>COMSCI2 Modules</h1>
+    <p class="lead">
+        I have not done this for semester 1 as there is so little time left in the semester now. 
+  <br>
+        Instead of listing all the details for SEM1, below I put in the links to the lecturers info pages so that you can check out the information for yourselves.    </p>
   </div>
 
+  <!-- Example of the subject buttons: use Bootstrap's grid for mobile stacking -->
+  <div class="container-outer pt-5">
 
+<div class="d-grid gap-2 d-md-block">
+  <a href="https://loop.dcu.ie/course/view.php?id=73035" class="btn btn-course">
+    CSC1020 Systems Analysis
+  </a>
+
+  <a href="https://loop.dcu.ie/course/view.php?id=73045" class="btn btn-course">
+    CSC1028 Probability & Statistics
+  </a>
+
+  <a href="https://loop.dcu.ie/course/view.php?id=73043" class="btn btn-course">
+    CSC1030 Computer Programming 3 (Data Structures & Algorithms)
+  </a>
+
+  <a href="https://loop.dcu.ie/course/view.php?id=73066" class="btn btn-course">
+    CSC1037 Introduction to DevOps
+  </a>
+
+  <a href="https://csc1038.computing.dcu.ie/index.html" class="btn btn-course">
+    CSC1038 System Programming (C)
+  </a>
+
+  <a href="https://loop.dcu.ie/course/view.php?id=74758" class="btn btn-course">
+    MTH1034 Linear Algebra
+  </a>
+</div>
+
+    </div>
+
+
+</div>
+
+
+
+
+    <!-- Disclaimer -->
+     <div class="container-fluid px-3 py-4"> 
+
+    <div class="px-5 py-5">
+      <h2>Disclaimer!</h2>
+      <p>I am going to repeat my disclaimer here. </p>
+      <p>This page was created only as a pet project. It is not meant to be used as a study guide. 
+        And I don't claim that I will always be correct. It is simply my understanding of what the lecturers said.</p>
+      <p>If I do make a mistake, its's not the end of the world. Just tell me and I will update. You all know how to contact me I'm sure. </p>
+      <p>Please note that while I will make sure to update all the information, that it is not going to be perfect and mistakes might be made.</p>
+      <p>Make sure that you keep yourself informed of...</p>
+      <ul>
+
+        <li>Homework that needs to be completed </li>
+        <li>The exam times and dates </li>
+        <li>Any projects deadlines and what is needed for them </li>
+
+      </ul>
+<div style="width:50%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/3ohhwqB1XtvYJ8jwUE" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/cbc-funny-comedy-3ohhwqB1XtvYJ8jwUE">via GIPHY</a></p>      <p>Yes, I do realise that this page is super rudimentary and many of you could have done much better.
+        <br>I only learned a little html & css last year. And let's face it, this was made mainly with bootstrap. 
+        I'll update this <small><i>(or won't)</i></small> as I learn more.
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-smile" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8"/>
+        </svg>
+
+        <br>I think that for now I'll just give you the info and beautify as I go.
+      </p>
+    </div>
+  </div>
 
     <!-- FOOTER -->
 
           <footer class="footer p-5">
                
-        <div class="container">
+<div class="container-fluid px-3 py-4"> 
             <div class="row">
                 <div class="col-md-3">
                     <h2>Thelma Clarke</h2>
