@@ -22,7 +22,7 @@
     Author: Thelma Clarke
     
     Creation: 8th of November 2025
-    Last Modified: 12/10/2025
+    Last Modified: 14/11/2025
     Description: Personal Project; Make a page that the students can see important dates
     https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this 
     -->
@@ -76,7 +76,7 @@
   </nav>
 
   <!-- HEADER-->
-    <!-- deadlines page -->
+  <!-- deadlines page -->
   <!-- Plan
     1. container1 w description 
 
@@ -93,13 +93,15 @@
             - bring in notes? 
             - sample up on loop? -->
 
-  <!-- Make the section for HOMEWORK -->
-     <div class="container-fluid px-3 py-4"> 
+  <!-- Section for HOMEWORK -->
+  <div class="container-fluid px-3 py-4"> 
+    <!-- Homework intro -->
     <div class="px-5 py-1 ">
       <h1 id="homework">Homework</h1>
       <p>I have broken down this section by module, that way you can check what needs to be done on a regular week by week basis</p>
       <p>Below you can find the <b>homework</b> due <b>times</b> and <b>dates</b> for each module</p>
       <P>If you want to go directly to the week by week breakdown of important dates / exams<a class="btn btn-light" href="deadlines.html#exams-projects">here</a></P>
+      <!-- Container for the buttons for module homework -->
       <div class="container-buttons mt-1">
         <div class="row">
           <div class="col">
@@ -316,524 +318,513 @@
       </div>
     </div>
 
+  </div>
+  <!-- ############### DEADLINES SECTION  ######################### -->
+  <!-- DEADLINES CONTAINERS W MODALS-->
+  <div class="container-fluid px-3 py-4"> 
 
+    <div class="px-5 py-1 ">
+      <h1 id="exams-projects">Projects / Exam times deadlines</h1>
+      <p>Below you can find the <b>Projects / Exam details</b> sorted by which week it's in</p>
 
-    <!-- DEADLINES CONTAINERS W MODALS-->
-    <div class="container-fluid px-3 py-4"> 
+      <!-- ACCORDIAN-->
+      <div class="accordion" id="accordionExample">
 
-      <div class="px-5 py-1 ">
-        <h1 id="exams-projects">Projects / Exam times deadlines</h1>
-        <p>Below you can find the <b>Projects / Exam details</b> sorted by which week it's in</p>
-
-        <!-- ACCORDIAN-->
-        <div class="accordion" id="accordionExample">
-          <!-- Accordian arm -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                WEEK 10
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>There are no exams or deadlines for this week</strong> 
-              </div>
+        <!-- Accordian arm WEEK 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              WEEK 10
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>There are no exams or deadlines for this week</strong> 
+              <P>This is the last week of Systems anaylsis quizes & Journals. 
+                There are no more links in his loop for them in week 11 or 12</P>
             </div>
           </div>
-          <!-- Accordian arm -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                WEEK 11
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
-              
-
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Systems Anaylsis - Group Project</strong></li>
-            <li class="list-group-item">25% of the final grade <br>Submission Deadline: 11:59pm, 23rd November 2025
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#srsgroup">
-                Click for more info
-              </button>
-            </li> 
-          </ul>    
-
-              </div>
+        </div>
+        <!-- Accordian arm WEEK 11 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              WEEK 11
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
+              <!-- The list of information -->
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>Systems Anaylsis - Group Project</strong></li>
+                <li class="list-group-item">25% of the final grade <br>Submission Deadline: 11:59pm, 23rd November 2025
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#srsgroup">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>    
+              <!-- End of the list-->
             </div>
           </div>
+        </div>
 
-          <!-- Accordian arm -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                WEEK 12
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
-
-                          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Python</strong></li>
-            <li class="list-group-item">2nd Lab exam 10% (Mon 24th of Nov, 10am-12pm).
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pyExam">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
-                
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Probability & Statistics</strong></li>
-            <li class="list-group-item">Lab worth ??% (Tuesday 25th of Nov, 11am).
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#problab">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
-
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>DevOps</strong></li>
-            <li class="list-group-item">Lab worth 18% (Wednesday 26th of Nov, 10am).
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dev">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
-
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>C Programming</strong></li>
-            <li class="list-group-item">2nd Lab exam 10% (Thursday 27th of Nov, 3pm-5pm).
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cprog">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
-
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Systems Anaylsis - Individual Project</strong></li>
-            <li class="list-group-item">15% of the final grade<br>Submission Deadline: 11:59pm, 30th November 2025
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#srsvideo">
-                Click for more info
-              </button>
-            </li> 
-          </ul>    
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-          <!-- Accordian arm -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                STUDY WEEK
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>We are trying to organise a study room for the week.</strong> 
-                <br>
-                The room and time that the room will be to follow. 
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordian arm -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                EXAM WEEK 1 (8th - 13th Dec)
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="collapseFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
-              
-
-
-
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Computer Programming 3</strong></li>
-            <li class="list-group-item">Monday 8th Dec, 2-4pm 
-              <br>
-              Please note that our rooms won't be the same for all. 
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pyxmas">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
+        <!-- Accordian arm -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              WEEK 12
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
+              <!-- The list of information -->
 
               <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Linear Algebra </strong></li>
-            <li class="list-group-item">Friday 12th Dec, 9:30-11:30am
-                <br>
-              Please note that our rooms won't be the same for all. 
-            <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xmath">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
-          
-          
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordian arm -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                EXAM WEEK 2 (15th - 20th Dec)
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
+                <li class="list-group-item"><strong>Python</strong></li>
+                <li class="list-group-item">2nd Lab exam 10% (Mon 24th of Nov, 10am-12pm).
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pyExam">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
               
-          <ul class="list-group py-1">
-            <li class="list-group-item"><strong>Probability & Statistics</strong></li>
-            <li class="list-group-item">
-              Tuesday 16th Dec, 2-4pm<br>
-              Please note that our rooms won't be the same for all. 
-              <br>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#probxmas">
-                Click for more info
-              </button>
-            </li> 
-          </ul>
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>Probability & Statistics</strong></li>
+                <li class="list-group-item">Lab worth ??% (Tuesday 25th of Nov, 11am).
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#problab">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
 
-          <!-- <ul class="list-group py-1">
-            <li class="list-group-item">Next Wednesday at 9am</li>
-            <li class="list-group-item">What: Maths quiz
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
-                Click for more info
-              </button>
-            </li> 
-          </ul>    -->
-              </div>
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>DevOps</strong></li>
+                <li class="list-group-item">Lab worth 18% (Wednesday 26th of Nov, 10am).
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dev">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
+
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>C Programming</strong></li>
+                <li class="list-group-item">2nd Lab exam 10% (Thursday 27th of Nov, 3pm-5pm).
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cprog">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
+
+
+
             </div>
           </div>
         </div>
-        <!-- END OF ACCORDIAN-->        
+        <!-- Accordian arm STUDY WEEK-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              STUDY WEEK
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>We are trying to organise a study room for the week.</strong> 
+              <br>
+              The room and time that the room will be to follow. 
+            </div>
+          </div>
+        </div>
+        <!-- SA Video submission -->
+        <ul class="list-group py-1">
+          <li class="list-group-item"><strong>Systems Anaylsis - Individual Project</strong></li>
+          <li class="list-group-item">15% of the final grade<br>Submission Deadline: 11:59pm, 7th December 2025
+            <br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#srsvideo">
+              Click for more info
+            </button>
+          </li> 
+        </ul>
+
+        <!-- Accordian arm EXAM WEEK 1 (8th - 13th Dec) -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              EXAM WEEK 1 (8th - 13th Dec)
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="collapseFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
+
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>Computer Programming 3</strong></li>
+                <li class="list-group-item">Monday 8th Dec, 2-4pm 
+                  <br>
+                  Please note that our rooms won't be the same for all. 
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pyxmas">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
+
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>Linear Algebra </strong></li>
+                <li class="list-group-item">Friday 12th Dec, 9:30-11:30am
+                  <br>
+                    Please note that our rooms won't be the same for all. 
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xmath">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordian arm EXAM WEEK 2 (15th - 20th Dec) -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              EXAM WEEK 2 (15th - 20th Dec)
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Please see the important dates below.</strong><br>Click on the buttons for more info
+            
+              <ul class="list-group py-1">
+                <li class="list-group-item"><strong>Probability & Statistics</strong></li>
+                <li class="list-group-item">
+                  Tuesday 16th Dec, 2-4pm<br>
+                  Please note that our rooms won't be the same for all. 
+                  <br>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#probxmas">
+                    Click for more info
+                  </button>
+                </li> 
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF ACCORDIAN-->        
+    </div>
+  </div>
+  
+
+  <!-- The Modals -->
+
+  <!-- DEVOPS WARNING -->
+  <div class="modal fade" id="devopsModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">WARNING!!!</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>She sometimes put up an email after the labs asking that we send her the URL via a Google form 
+            <br>
+          We lose the 9% if we have the work done, but miss the email. <br>
+          There is no set tme that she might send out the email <br>
+          If you see the email, put the form link on the Whatsapp group <br>
+          And then one of the class reps can put it in the announcements. <br>
+          </p>
+          <p><strong>NB: the lab for week 12 is now going to be worth 18%</strong> </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
       </div>
     </div>
-  
+  </div>  
 
-    <!-- The Modals -->
+  <!-- MODALS FOR WEEK 11 -->
+  <div class="modal fade" id="pyExam">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-    <!-- DEVOPS WARNING -->
-    <div class="modal fade" id="devopsModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Any Extra info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
 
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">WARNING!!!</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>10% of the final grade. <br>
+          He will provide samples on loop. (TBC) <br>
+          Multiple choice questions   <br>
+          Topics: everything, but weighted towards the last 6 weeks of the semester. (Since the last exam.) <br>
+          </p>
+        </div>
 
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>She sometimes put up an email after the labs asking that we send her the URL via a Google form 
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+  <!-- SRS week 11 Group submission-->
+        <div class="modal fade" id="srsgroup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Any Extra info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>Worth 25% of the final grade</p>
+          <p>
+          There is a template on his loop page<br>
+          It is a continuation of the last project here we need to correct and complete the SRS document <br>
+          
+          </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+  <!-- C WEEK 12 -->
+
+  <!-- Probs & stats week 12 exam -->
+  <div class="modal fade" id="problab">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Any Extra info</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>10% of the final grade. <br>
+        <p>
+        It will be in the labs<br>
+        Plots and write code in RStudio<br>
+        Sample exam w solutions up on Loop <br>
+        He will provide samples on loop.  <br>
+        Can bring in 2 pages, front & back of notes.  <br>
+        Notes will be on loop during exam. No other access to internet.(TBC) <br>
+        </p>
+      </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="cprog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><strong>Any Extra info</strong></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Programming Assessment worth 20%.<br>
+          Same format as the last exam <br>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+      <!-- ANOTHER DEVOPS MODAL -->
+  <div class="modal fade" id="dev">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><strong>Any Extra info</strong></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Worth 18%.<br>
+          Don't know what the format is or what it will be on<br>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+  <!-- SYSTEMS Analysis VIDEO -->
+    <div class="modal fade" id="srsvideo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Any Extra info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>Worth 15% of the final grade</p>
+          <p>
+          There is a template on his loop page<br>
+          PART I:  SRS Overview and Explanation for a Stakeholder (max 3 minutes) <br>
+          PART II: Self-Reflection on SRS Project (max 2 minutes) <br>
+          
+          </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+  <!-- python, maths & probs xmas -->
+
+  <div class="modal fade" id="pyxmas">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Any Extra info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>??% of the final grade. <br>
+          I'm not sure of extra info for here <br>
+            <br>
+          Topics: everything<br>
+          </p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+  <div class="modal fade" id="probxmas">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Any Extra info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>??% of the final grade. <br>
+              Not in R. Written exam 
               <br>
-            We lose the 9% if we have the work done, but miss the email. <br>
-            There is no set tme that she might send out the email <br>
-            If you see the email, put the form link on the Whatsapp group <br>
-            And then one of the class reps can put it in the announcements. <br>
-            </p>
-            <p><strong>NB: the lab for week 12 is now going to be worth 18%</strong> </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
+          I'm not sure of extra info for here <br>
+            <br>
+          Topics: everything<br>
+          </p>
         </div>
-      </div>
-    </div>  
 
-    <!-- MODALS FOR WEEK 11 -->
-    <div class="modal fade" id="pyExam">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>10% of the final grade. <br>
-            He will provide samples on loop. (TBC) <br>
-            Multiple choice questions   <br>
-           Topics: everything, but weighted towards the last 6 weeks of the semester. (Since the last exam.) <br>
-            </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
+
       </div>
-    </div>  
+    </div>
+  </div>  
 
-    <!-- SRS week 11 Group submission-->
-         <div class="modal fade" id="srsgroup">
-      <div class="modal-dialog">
-        <div class="modal-content">
 
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
+  <div class="modal fade" id="pyxmas">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>Worth 25% of the final grade</p>
-            <p>
-            There is a template on his loop page<br>
-            It is a continuation of the last project here we need to correct and complete the SRS document <br>
-           
-            </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Any Extra info</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
-      </div>
-    </div> 
 
-    <!-- C WEEK 12 -->
-
-    <!-- Probs & stats week 12 exam -->
-      <div class="modal fade" id="problab">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>10% of the final grade. <br>
-            <p>
-            It will be in the labs<br>
-            Plots and write code in RStudio<br>
-            Sample exam w solutions up on Loop <br>
-            He will provide samples on loop.  <br>
-            Can bring in 2 pages, front & back of notes.  <br>
-            Notes will be on loop during exam. No other access to internet.(TBC) <br>
-            </p>
-          </div>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>??% of the final grade. <br>
+          I'm not sure of extra info for here <br>
+            <br>
+          Topics: everything<br>
+          </p>
         </div>
-      </div>
 
-
-    <div class="modal fade" id="cprog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title"><strong>Any Extra info</strong></h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            Programming Assessment worth 20%.<br>
-            Same format as the last exam <br>
-
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
         </div>
+
       </div>
-    </div>  
-
-        <!-- ANOTHER DEVOPS MODAL -->
-    <div class="modal fade" id="dev">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title"><strong>Any Extra info</strong></h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            Worth 18%.<br>
-            Don't know what the format is or what it will be on<br>
-
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-    </div>  
-
-    <!-- SYSTEMS Analysis VIDEO -->
-      <div class="modal fade" id="srsvideo">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>Worth 15% of the final grade</p>
-            <p>
-            There is a template on his loop page<br>
-            PART I:  SRS Overview and Explanation for a Stakeholder (max 3 minutes) <br>
-            PART II: Self-Reflection on SRS Project (max 2 minutes) <br>
-           
-            </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-    </div> 
-
-    <!-- python, maths & probs xmas -->
-
-    <div class="modal fade" id="pyxmas">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>??% of the final grade. <br>
-            I'm not sure of extra info for here <br>
-              <br>
-           Topics: everything<br>
-            </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-    </div>  
-
-    <div class="modal fade" id="probxmas">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>??% of the final grade. <br>
-               Not in R. Written exam 
-               <br>
-            I'm not sure of extra info for here <br>
-              <br>
-           Topics: everything<br>
-            </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-    </div>  
-  
-
-    <div class="modal fade" id="pyxmas">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Any Extra info</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <p>??% of the final grade. <br>
-            I'm not sure of extra info for here <br>
-              <br>
-           Topics: everything<br>
-            </p>
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-
-        </div>
-      </div>
-    </div>  
+    </div>
+  </div>  
 
     <!-- FOOTER -->
 
@@ -898,4 +889,4 @@
 
 </body>
 
-  </html>
+</html>
