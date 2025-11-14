@@ -3,16 +3,17 @@ SID: 19746069
 URL: https://thelmina4.github.io/student-timetable/
 This is a website for the COMSCI2 students 2025
 
-
 Inside it there are a few .html pages
-index
- - the main page that is my disclaimer. 
 whatson
- - is the page that I built at firat to make sure that all the containers were the same and something for them to build off of.
+ - is the page that I built at first to make sure that all the containers were the same and something for them to build off of.
+index
+ - the main page intro &  disclaimer. 
 deadlines
- - the page is comprised of 2 parts our #homework and any pertinent #deadlines/ important dates of note. 
+ - comprised of 2 parts #homework and any pertinent #deadlines/ important dates of note. 
  - homework is the normal weekly homework / quizes that we need to complete by a certain date. This rarely changes unless the lecturer adds something that will then comtinue for the rest of the semester
  - deadlines is a week by week section that I would like to be able to togglt a week number and below will be the exams etc sorted by time and date
+   - NOTE TO SELF: MAYBE SPLIT HOMEWORK AND DEADLINES ONTO 2 PAGES?
+   - OR IF LOOKING AT IT ON A WEBSITE HAVE HOMEWORK LEFT COL, DEADLINES RIGHT, SIDE BY SIDE?
 modules
  - is not complete yet, this is something that I will come back to in second semester
  - plan is that it will list the following
@@ -22,3 +23,39 @@ modules
    - a breakdown of the exams and their weights
    - code to search for the past exam papers, or maybe I'll donload the pdf's and make them available directly here
 
+Below are the current pages. The "..." are aspirational. I would like to get these done
+student-timetable/
+|__index.html
+|     |__intro
+      |__Disclaimer
+      |__links to loop (removable)
+
+|__dealines.html
+|     |__#homework
+      |__#deadlines
+      |__...calendar (possible save to calander option or a calander using redbrick for the info)
+
+|__modules.html
+|     |__links to all the module pages, loop etc
+      |__... einstein
+      |__... past papers 
+      |__... module info, CA, exams, 
+      |__... useful websites to aid learning
+      |__... warning box that chatgpt should be used sparingly
+
+|__...privacy policy / cookies
+|
+
+|__...speed_coding_chalanges
+|        |__...speed code challenge using a terminal
+         |__...top score
+         |__...difficulty levels
+
+|__...comments
+|        |__...how can we improve?
+
+|__...polls & surveys
+|
+
+|__...quizes: test your knowledge
+|
