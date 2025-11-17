@@ -18,4 +18,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
+//  Automatically open the modal when the page loads
+window.onload = function() {
+    var myModal = new bootstrap.Modal(document.getElementById('updatesModal'));
+    myModal.show();
+};
