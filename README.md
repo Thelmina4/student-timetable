@@ -52,10 +52,14 @@ student-timetable/
          |__...difficulty levels
 
 |__...comments
-|        |__...how can we improve?
+|        |__... (not sure yet)
 
 |__...polls & surveys
-|
+|        |__... how can we improve?(using notes from devops wk11, on Notion notes)
 
 |__...quizes: test your knowledge
 |
+
+Extra: 
+ - add a counter to see how many times the site is viewed.
+ - Create a survey for the lecturers that they can fill out of the fAQs (look at devops wk 11 to see where the idea came from)
