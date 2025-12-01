@@ -26,7 +26,7 @@ modules
    - code to search for the past exam papers, or maybe I'll donload the pdf's and make them available directly here
 
 Below are the current pages. The "..." are aspirational. I would like to get these done
-student-timetable/
+student-timetable/ <br>
 |__index.html
 |     |__intro
       |__Disclaimer
@@ -66,3 +66,4 @@ Extra:
  - add a counter to see how many times the site is viewed.
 
  - Create a survey for the lecturers that they can fill out of the fAQs (look at devops wk 11 to see where the idea came from)
+
