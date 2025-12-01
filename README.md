@@ -3,6 +3,8 @@ SID: 19746069
 URL: https://thelmina4.github.io/student-timetable/
 This is a website for the COMSCI2 students 2025
 
+🤝 Show your support - give a ⭐️ to this project if you liked the content 
+
 Inside it there are a few .html pages
 whatson
  - is the page that I built at first to make sure that all the containers were the same and something for them to build off of.
@@ -62,4 +64,5 @@ student-timetable/
 
 Extra: 
  - add a counter to see how many times the site is viewed.
+
  - Create a survey for the lecturers that they can fill out of the fAQs (look at devops wk 11 to see where the idea came from)
