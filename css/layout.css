@@ -1,12 +1,13 @@
 /* MAIN */
 body {
-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-background-color: #f8f9fa;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
 }
+
 /* HEADER */
 header {
-background-color: #ffffff;
-border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /* NAV BAR */
@@ -15,6 +16,7 @@ border-bottom: 1px solid #e5e5e5;
 .navbar-toggler {
   border-color: rgba(0, 0, 0, 0.1);
 }
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -27,19 +29,24 @@ border-bottom: 1px solid #e5e5e5;
   width: 18px;
   height: 18px;
 }
+
 /*Containers*/
 .container-outer {
-  width: 80%; 
+  width: 80%;
   font-size: 1.1rem;
   white-space: normal;
-  align-items: center;         /*  vertically center text */
-  justify-content: center;       /* horizontally center text */
+  align-items: center;
+  /*  vertically center text */
+  justify-content: center;
+  /* horizontally center text */
   margin: 1px auto;
 }
+
 /* For the subject buttons */
 .container-buttons {
   text-align: center;
 }
+
 /* 
 .container-buttons .row {
   margin-bottom: 5px;  space between rows */
@@ -47,13 +54,17 @@ border-bottom: 1px solid #e5e5e5;
 
 .subject-btn {
   width: 80%;
-  height: 70px;                  /* your chosen height */
+  height: 70px;
+  /* your chosen height */
   font-size: 1.1rem;
   white-space: normal;
   word-wrap: break-word;
-  display: flex;                 /* key line — makes centering easy */
-  align-items: center;           /* vertically center text */
-  justify-content: center;       /* horizontally center text */
+  display: flex;
+  /* key line — makes centering easy */
+  align-items: center;
+  /* vertically center text */
+  justify-content: center;
+  /* horizontally center text */
   margin: 1px auto;
   text-align: center;
 }
@@ -66,33 +77,47 @@ border-bottom: 1px solid #e5e5e5;
 /*Take me to the top button Thelma*/
 #myBtn {
 
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #83C5BE; 
-  opacity: 0.6; /* Set the opacity so that it becomes more transparent*/
-   /* Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #83C5BE;
+  opacity: 0.6;
+  /* Set the opacity so that it becomes more transparent*/
+  /* Set a background color */
+  color: black;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #myBtn:hover {
   /* Add a dark-grey background on hover */
-  background-color: #555; 
+  background-color: #555;
   opacity: 0.9;
   color: whitesmoke;
 }
 
 .btn-course {
   display: inline-block;
-  background-color: #6c757d; /* Smoky grey */
+  background-color: #6c757d;
+  /* Smoky grey */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -102,7 +127,8 @@ border-bottom: 1px solid #e5e5e5;
 }
 
 .btn-course:hover {
-  background-color: #5a6268; /* slightly darker smoky tone on hover */
+  background-color: #5a6268;
+  /* slightly darker smoky tone on hover */
   color: #fff;
 }
 
@@ -131,6 +157,12 @@ button {
   margin-left: 10px;
 }
 
+.content-wrapper {
+  max-width: 720px;
+  /* feels like mobile/tablet width */
+  margin: 0 auto;
+}
+
 .intro-card {
   background: #ffffff;
   border-radius: 0.75rem;
@@ -150,8 +182,8 @@ button {
 
 /* FOOTER */
 footer {
-    background-color: #ffffff;
-    border-top: 1px solid #e5e5e5;
-    font-size: 0.85rem;
-    color: #6c757d;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.85rem;
+  color: #6c757d;
 }
