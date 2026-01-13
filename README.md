@@ -6,17 +6,17 @@ This is a website for the COMSCI2 students 2025
 🤝 Show your support - give a ⭐️ to this project if you liked the content 
 
 Inside it there are a few .html pages
-whatson
+whatson.html
  - is the page that I built at first to make sure that all the containers were the same and something for them to build off of.
-index
+index.html
  - the main page intro &  disclaimer. 
-deadlines
+deadlines*.html
  - comprised of 2 parts #homework and any pertinent #deadlines/ important dates of note. 
- - homework is the normal weekly homework / quizes that we need to complete by a certain date. This rarely changes unless the lecturer adds something that will then comtinue for the rest of the semester
- - deadlines is a week by week section that I would like to be able to togglt a week number and below will be the exams etc sorted by time and date
+ - homework is the normal weekly homework / quizes that we need to complete by a certain date. This rarely changes unless the lecturer adds something that will then comtinue for the rest of the semester.
+ - deadlines is a week by week section that I would like to be able to toggle a week number and below will be the exams etc sorted by time and date
    - NOTE TO SELF: MAYBE SPLIT HOMEWORK AND DEADLINES ONTO 2 PAGES?
    - OR IF LOOKING AT IT ON A WEBSITE HAVE HOMEWORK LEFT COL, DEADLINES RIGHT, SIDE BY SIDE?
-modules
+modules*.html
  - is not complete yet, this is something that I will come back to in second semester
  - plan is that it will list the following
    - course name
@@ -25,12 +25,11 @@ modules
    - a breakdown of the exams and their weights
    - code to search for the past exam papers, or maybe I'll donload the pdf's and make them available directly here
 
-Below are the current pages. The "..." are aspirational. I would like to get these done
+Below are the current pages. The "..." are aspirational. I would like to play with these ideas
 student-timetable/ <br>
 |__index.html
 |     |__intro
-      |__Disclaimer
-      |__links to loop (removable)
+      |__Semesters
 
 |__dealines.html
 |     |__#homework
@@ -63,8 +62,4 @@ student-timetable/ <br>
 |
 
 Extra: 
- - add a counter to see how many times the site is viewed.
-
- - Create a survey for the lecturers that they can fill out of the fAQs (look at devops wk 11 to see where the idea came from)
-
-
+ - Create a survey for the lecturers that they can fill out of the FAQs (look at devops wk 11 to see where the idea came from)

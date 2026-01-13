@@ -60,7 +60,7 @@ border-bottom: 1px solid #e5e5e5;
 
 .subject-btn:hover {
   transform: scale(1.05);
-  transition: transform 0.2s ease;
+  transition: 0.2s ease;
 }
 
 /*Take me to the top button Thelma*/
@@ -136,6 +136,17 @@ button {
   border-radius: 0.75rem;
 }
 
+.intro-card:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease;
+  /* box-shadow: var(--bs-shadow-lg); */
+}
+
+/* Accordion hover == open colour */
+.accordion-button.collapsed:hover {
+  background-color: var(--bs-accordion-active-bg);
+  color: var(--bs-accordion-active-color);
+}
 
 /* FOOTER */
 footer {

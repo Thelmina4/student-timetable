@@ -1,3 +1,4 @@
+// Scroll to the top JS
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
@@ -17,6 +18,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// END OF: Scroll to the top JS
 
 //  Automatically open the modal when the page loads
 window.onload = function() {
@@ -24,7 +26,7 @@ window.onload = function() {
     myModal.show();
 };
 
-/* COUNTER FOR THE WEBPAGE */
+/* COUNTER FOR THE WEBPAGE: Not live */
 // Get the button and the span element
 const button = document.getElementById('clickButton');
 const counterSpan = document.getElementById('counter');
