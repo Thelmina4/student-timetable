@@ -41,3 +41,4 @@ button.addEventListener('click', () => {
   // Update the text in the span element
   counterSpan.textContent = count;
 });
+

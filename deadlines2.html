@@ -9,15 +9,17 @@
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20'%3E📅%3C/text%3E%3C/svg%3E">
 
   <!-- Bootstrap CSS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/layout.css">
+
 
   <!--Version infomation
     File: deadlines2.html
     Author: Thelma Clarke
     
     Creation: 10th Jan 2026
-    Last Modified: 13/01/2026
+    Last Modified: 15/02/2026
     Description: Personal Project; Make a page that the students can see important dates
     https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this 
     -->
@@ -26,9 +28,9 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-  <header class="py-1 bg-body-tertiary">
+  <header class="py-1 bg-body-tertiary sticky-top">
 
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <h1 class="h4 mb-0">
           <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -52,11 +54,11 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link dropdown-toggle" href="#" id="semester1Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Semester 1
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu" aria-labelledby="semester1Dropdown">
                 <li><a class="dropdown-item" href="deadlines1.html#homework">Homework</a></li>
                 <li><a class="dropdown-item" href="deadlines1.html#exams-projects">Exams/Projects</a>
                 </li>
@@ -64,11 +66,11 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link dropdown-toggle" href="#" id="semester2Dropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Semester 2
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul class="dropdown-menu" aria-labelledby="semester2Dropdown">
                 <li><a class="dropdown-item" href="deadlines2.html#homework">Homework</a></li>
                 <li><a class="dropdown-item" href="deadlines2.html#exams-projects">Exams/Projects</a>
                 </li>
@@ -94,12 +96,12 @@
       <div class="content-wrapper">
         <!-- Module Card -->
 
-        <div class="intro-card p-3 shadow-sm mb-3">
+        <div class="intro-card p-3 shadow-sm mb-3" id="homework">
           <h1 class="h5 mb-0">&#x1f4da COMSCI2 SEMESTER 2 - Labs Deadlines </h1>
         </div>
 
         <!-- CSC1018 Logic -->
-        <div class="intro-card p-3 shadow-sm mb-3">
+        <div  class="intro-card p-3 shadow-sm mb-3">
           <h2 class="h6 mb-2">CSC1018 Logic</h2>
           <ul class="list-group list-group-flush">
             <li class="list-group-item px-0">
@@ -249,8 +251,8 @@
 
         <!-- Semester 2 Exam & Assignments -->
 
-        <div class="intro-card p-3 shadow-sm mb-3">
-          <h1 class="h5 mb-0">&#x1f4da COMSCI2 - Semester 2 Exam & Assignments</h1>
+        <div class="intro-card p-3 shadow-sm mb-3" id="exams-projects">
+          <h1 class="h5 mb-0" >&#x1f4da COMSCI2 - Semester 2 Exam & Assignments</h1>
         </div>
 
         <!-- Accordion -->
@@ -610,6 +612,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
