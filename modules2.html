@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description"
-    content="page for the students of COMSCI2 to findinformation on modules in Semester two. ">
+  <meta name="description" content="page for the students of COMSCI2 to findinformation on modules in Semester two. ">
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>COMSCI - College Deadlines </title>
@@ -93,69 +92,247 @@
   <!-- Main content -->
   <main class="flex-fill">
     <div class="container my-4">
-      <!-- Width-constrained wrapper -->
       <div class="content-wrapper">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-lg-10">
 
-            <div class="intro-card p-4 shadow-sm mb-4">
+            <div class="intro-card p-4 shadow-sm mb-4 bg-light border-0">
               <h1 class="h5 mb-3">📚 COMSCI2 SEMESTER 2</h1>
-              <p class="mb-3">
-                Yikes! I haven't gotten to this page yet.
-              </p>
-
-            </div>
-
-
-            <div class="col-12 col-sm-6">
-              <div class="intro-card p-3 shadow-sm h-100">
-                <h3 class="h6 mb-2">&#x1f4da; Semester 2</h3>
-                <p class="mb-0">Overview of modules, deadlines, and key information.</p>
-                <ul>
-                  <li>CSC1018 Logic</li>
-                  <li>CSC1021 Operating Systems</li>
-                  <li>CSC1031 Computer Programming 4 <br>(Object Oriented Programming)</li>
-                  <li>CSC1022 Introduction to Databases</li>
-                  <li>CSC1029 Software Testing</li>
-                  <li>CSC1040 Full Stack Development</li>
-                </ul>
-
-
-
-            <!-- Accordion -->
-            <div class="accordion" id="semesterAccordion">
-
-              <!-- CSC1018_logic -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="CSC1018_logic-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#CSC1018_logic" aria-expanded="false" aria-controls="CSC1018_logic">
-                    CSC1018 Logic
-                  </button>
-                </h2>
-                <div id="CSC1018_logic" class="accordion-collapse collapse" aria-labelledby="CSC1018_logic-heading"
-                  data-bs-parent="#semesterAccordion">
-                  <div class="accordion-body">
-
-                    <div class="intro-card p-3 shadow-sm mb-3">
-                      <h3 class="h6 mb-2">Module Information</h3>
-                      <p class="mb-1"><strong>Module Codes:</strong> CA269 / CSC1031</p>
-                      <p class="mb-1"><strong>Lecturer:</strong> Mikhail Kudriatsev</p>
-                      <p class="mb-1"><strong>Email Address:</strong> mikhail.kudriavtsev2 [[@]] mail.dcu.ie</p>
-                      <p class="mb-1"><strong>Course Website:</strong> <a
-                          href="https://loop.dcu.ie/course/view.php?id=75095">Loop</a></p>
-
-                    </div>
-
+              <p>Quick Jump to Module:</p>
+              <div class="row g-2">
+                <div class="col-6 col-sm-4">
+                  <a href="#CSC1018" class="btn btn-sm btn-outline-dark w-100 module-btn">Logic</a>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <a href="#CSC1021" class="btn btn-sm btn-outline-dark w-100 module-btn">OS</a>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <a href="#CSC1031" class="btn btn-sm btn-outline-dark w-100 module-btn">OOP</a>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <a href="#CSC1022" class="btn btn-sm btn-outline-dark w-100 module-btn">Databases</a>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <a href="#CSC1029" class="btn btn-sm btn-outline-dark w-100 module-btn">Testing</a>
+                </div>
+                <div class="col-6 col-sm-4">
+                  <a href="#CSC1040" class="btn btn-sm btn-outline-dark w-100 module-btn">Full Stack</a>
+                </div>
               </div>
             </div>
 
+
+            <div class="row g-4" >
+
+              <div class="col-md-6" id="CSC1018">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-header bg-dark text-white py-3">
+                    <h2 class="h6 mb-0">CSC1018 Logic</h2>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-1"><strong>Lecturer: </strong>Dr. David Sinclair</p>
+                    <p class="mb-1"><strong>Email: </strong>David.Sinclair [[ @ ]] mail.dcu.ie</p>
+                    <p class="mb-1"><strong>Exams: </strong>Continuous Assessment 50% / Examination Weight 50%</p>
+                    <p class="mb-1"><strong>Focus: </strong>Logic & Prolog </p>
+                    <p class="mb-1"><strong>Exercise sheets: </strong>No marks for the exercise sheets</p>
+                    <p class="mb-1"><strong>Past exams: </strong><a
+                        href="https://dcu.guruarchive.com/search?iss=https:%2F%2Flogin.gurudevelopments.com%2Fauth%2Frealms%2Fdcu">Guru
+                        Archive</a>. Search "CSC1018 Logic"</p>
+                    <p>The module mark is a straight weighted average of: </p>
+                    <ul>
+                      <li>50% continuous assessment</li>
+                      <ul>
+                        <li>Prolog lab exam (25%)</li>
+                        <li>Prolog assignment (25%)</li>
+                      </ul>
+                      <li>50% end-of-semester examination</li>
+                      <ul>
+                        <li>Section A: Logic (80%)</li>
+                        <ul>
+                          <li> Answer all 6 questions in Section A. One question on
+                            Resolution worth 30%. Five other questions worth 10% each.</li>
+                        </ul>
+                        <li>Section B: Prolog (20%)</li>
+                        <ul>
+                          <li>Answer 2 out of 3 questions in Section B.
+                            Each question worth 10%.</li>
+                        </ul>
+
+                      </ul>
+
+                    </ul>
+                    <hr>
+                    <a href="https://loop.dcu.ie/course/view.php?id=75063" target="_blank"
+                      class="btn btn-sm btn-primary w-100">Go to Loop</a>
                   </div>
                 </div>
               </div>
 
+              <div class="col-md-6" id="CSC1021">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-header bg-dark text-white py-3">
+                    <h2 class="h6 mb-0">CSC1021 Operating Systems</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body">
+                      <p class="mb-1"><strong>Lecturer: </strong>Graham Healy</p>
+                      <p class="mb-1"><strong>Email: </strong>graham.healy [[ @ ]] mail.dcu.ie</p>
+                      <p class="mb-1"><strong>Focus: </strong>Operating Systems</p>
+                      <p class="mb-1"><strong>Exams: </strong>Continuous Assessment 30% / Examination Weight 70%</p>
+                      <ul>
+                        <li>20% SimpleShell - <a
+                            href="https://loop.dcu.ie/mod/assign/view.php?id=2869985">Assignment</a></li>
+                        <li>10% Lab Exam: Tuesday 31st March. Details on Loop</li>
+                      </ul>
+                      <p class="mb-1"><strong>Labs: </strong>No marks for the labs</p>
+                      <p class="mb-1"><strong>Past exams: </strong><a
+                          href="https://dcu.guruarchive.com/search?iss=https:%2F%2Flogin.gurudevelopments.com%2Fauth%2Frealms%2Fdcu">Guru
+                          Archive</a>. Search "CSC1021 Operating Systems"</p>
+
+                      <hr>
+                      <a href="https://loop.dcu.ie/course/view.php?id=75077" target="_blank"
+                        class="btn btn-sm btn-primary w-100">Go to Loop</a>
+                    </div>
+                    <!-- <a href="#" class="btn btn-sm btn-outline-dark w-100">View Resources</a> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" id="CSC1031">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-header bg-dark text-white py-3">
+                    <h2 class="h6 mb-0">CSC1031 Computer Programming 4 (Object Oriented Programming)</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body">
+                      <p class="mb-1"><strong>Lecturer: </strong>Dr Mikhail Kudriatsev</p>
+                      <p class="mb-1"><strong>Email: </strong>mikhail.kudriavtsev2 [[@]] mail.dcu.ie</p>
+                      <p class="mb-1"><strong>Exams: </strong>Continuous Assessment 30% / Examination Weight 70%</p>
+                      <ul>
+                        <li>15% quizzes</li>
+                        <li>15% <a href="https://csc1031.computing.dcu.ie/CA.html">UML project</a> </li>
+                        <li>20% labs</li>
+                      </ul>
+                      <p class="mb-1"><strong>Focus: </strong>
+                      <ul>
+                        <li>Object oriented programming concepts</li>
+                        <li>Java</li>
+                        <li>System design</li>
+                      </ul>
+                      </p>
+                      <p class="mb-1"><strong>Labs: </strong>Due Friday 17th of April</p>
+                      <p class="mb-1"><strong>Past exams: </strong>He will provide materials</p>
+                      <hr>
+                      <a href="https://loop.dcu.ie/course/view.php?id=75095" target="_blank"
+                        class="btn btn-sm btn-primary my-1 w-100">Go to Loop</a>
+                      <a href="https://csc1031.computing.dcu.ie/" target="_blank"
+                        class="btn btn-sm btn-primary my-1 w-100">Go to his website</a><br>
+                      <a href="https://csc1031.computing.dcu.ie/einstein/" target="_blank"
+                        class="btn btn-sm btn-primary my-1 w-100">Go to Einstein</a>
+                    </div>
+                    <!-- <a href="#" class="btn btn-sm btn-outline-dark w-100">View Resources</a> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" id="CSC1022">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-header bg-dark text-white py-3">
+                    <h2 class="h6 mb-0">CSC1022 Introduction to Databases</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body">
+                      <p class="mb-1"><strong>Lecturer: </strong>Prof. Mark Roantree</p>
+                      <p class="mb-1"><strong>Lecturer: </strong>Uttaran Bera</p>
+                      <p class="mb-1"><strong>Email: </strong>Uttaran.Bera [[ @ ]] mail.dcu.ie</p>
+                      <p class="mb-1"><strong>Exams: </strong>Continuous Assessment 100%</p>
+                      <ul>
+                        <li>CA1 Assignment - Lab: Relational Model & Algebra (15%)</li>
+                        <li>CA2 Assignment - Take Home/Pair: ER Models (20%)</li>
+                        <li>CA3 Assignment - Lab: F.D./ Normalisation (25%)</li>
+                        <li>CA4 Assignment - Lab: SQL Exam (40%) Friday the 10th of April</li>
+                      </ul>
+                      <p class="mb-1"><strong>Focus: </strong>
+                      <ul>
+                        <li>MySQL</li>
+                        <li>Databases</li>
+                      </ul>
+                      </p>
+                      <p class="mb-1"><strong>Past exams: </strong>None</p>
+
+                      <hr>
+                      <a href="https://loop.dcu.ie/course/view.php?id=75078" target="_blank"
+                        class="btn btn-sm btn-primary w-100">Go to Loop</a>
+                    </div>
+                    <!-- <a href="#" class="btn btn-sm btn-outline-dark w-100">View Resources</a> -->
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-6" id="CSC1029">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-header bg-dark text-white py-3">
+                    <h2 class="h6 mb-0">CSC1029 Software Testing</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body">
+                      <p class="mb-1"><strong>Lecturer: </strong>Dr. Silvana Togneri MacMahon</p>
+                      <p class="mb-1"><strong>Email: </strong>Silvana.MacMahon [[ @ ]] mail.dcu.ie</p>
+                      <p class="mb-1"><strong>Focus: </strong>Software Testing</p>
+                      <p class="mb-1"><strong>Exams: </strong>Continuous Assessment 100%</p>
+                      <ul>
+                        <li>Lab Exam 1 - Weeks 1 - 3 (30%)</li>
+                        <li>Lab Exam 2 - Weeks 4 - 7 (40%)</li>
+                        <li>Lab Exam 3 - Weeks 8 - 11 (30%)</li>
+                      </ul>
+                      <p class="mb-1"><strong>Labs: </strong>No marks for the labs the week before an exam</p>
+
+                      <hr>
+                      <a href="https://loop.dcu.ie/course/view.php?id=75082" target="_blank"
+                        class="btn btn-sm btn-primary w-100">Go to Loop</a>
+                    </div>
+                    <!-- <a href="#" class="btn btn-sm btn-outline-dark w-100">View Resources</a> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" id="CSC1040">
+                <div class="card h-100 shadow-sm border-0">
+                  <div class="card-header bg-dark text-white py-3">
+                    <h2 class="h6 mb-0">CSC1040 Full Stack Development</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body">
+                      <p class="mb-1"><strong>Lecturer: </strong>Dr. Michael Scriney</p>
+                      <p class="mb-1"><strong>Email: </strong>Michael.Scriney [[ @ ]] mail.dcu.ie</p>
+                      <p class="mb-1"><strong>Exams: </strong>Continuous Assessment 100%</p>
+                      <ul>
+                        <li>Django + REST/APIs (40%)</li>
+                        <li>Javascript - (20%)</li>
+                        <li>React - (40%)</li>
+                      </ul>
+                      <p class="mb-1"><strong>Focus: </strong>Full Stack Development</p>
+                      <p class="mb-1"><strong>Labs: </strong>No marks for the labs</p>
+                      <p class="mb-1"><strong>Past exams: </strong>None</p>
+                      <p class="mb-1"><strong>Sample exams: </strong>Available on Loop the week before an exam</p>
+
+                      <hr>
+                      <a href="https://loop.dcu.ie/course/view.php?id=75104" target="_blank"
+                        class="btn btn-sm btn-primary w-100">Go to Loop</a>
+                      <a href="https://www.computing.dcu.ie/~mscriney/csc1040/" target="_blank"
+                        class="btn btn-sm btn-primary my-1 w-100">Go to his website</a><br>
+
+                    </div>
+                    <!-- <a href="#" class="btn btn-sm btn-outline-dark w-100">View Resources</a> -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
