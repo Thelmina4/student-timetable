@@ -42,3 +42,11 @@ button.addEventListener('click', () => {
   counterSpan.textContent = count;
 });
 
+// update the year
+alert("Script is loading!");
+document.addEventListener("DOMContentLoaded", () => {
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.innerHTML = new Date().getFullYear();
+    }
+});

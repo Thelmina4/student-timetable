@@ -895,7 +895,15 @@
                   <small class="text-muted">When: </small>Friday 24th April 11:00-13:00 JS Lab exam, L101 (for those who
                   could not make the original lab exam).<br>
                 </div>
+              </div>
 
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1022 Intro to Databases - CA4 RESIT exam </h3>
+                  <small class="text-muted">Where: </small> LG27.<br>
+                  <small class="text-muted">When: </small>Tuesday, 21st April, 1-2p.m. <br>
+                </div>
               </div>
             </div>
           </div>
@@ -949,7 +957,7 @@
               <div class="accordion-body">
                 <div class="intro-card p-3 shadow-sm">
 
-                  <p>Link the the timetables: </p>
+                  <p>Link to the timetables: </p>
                   <a href="https://mytimetable.dcu.ie/" target="_blank" class="btn btn-sm btn-primary w-100">Go to
                     MyTimetable</a>
                 </div>
@@ -968,7 +976,7 @@
         <div class="modal-content">
 
           <div class="modal-header">
-            <h5 class="modal-title">Last updated on: <span id="updateDate">15/04/2026</h5>
+            <h5 class="modal-title">Last updated on: <span id="updateDate">18/04/2026</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -983,15 +991,11 @@
 
 
             <hr>
-            <h3 class="h6 mb-2">Room booked for Study Week</h3>
-            <small class="text-muted">Where: </small> CG05.<br>
-            <small class="text-muted">When: </small>13th April Monday to Friday (8am to 8pm). <br>
+            <h3 class="h6 mb-2">CSC1022 Intro to Databases - CA4 retake exam</h3>
+            <small class="text-muted">Where: </small> LG27.<br>
+            <small class="text-muted">When: </small>Tuesday, 21st April, 1-2p.m. <br>
             <br>
 
-            <hr>
-            <h3 class="h6 mb-2">CSC1031 java </h3>
-            <small class="text-muted">What: </small> Labs due Friday 17th April.<br>
-            <br>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button>
             </div>
@@ -1002,14 +1006,14 @@
   </main>
   <footer class="py-3 mt-auto">
     <div class="container text-center">
-      <p class="mb-1">© 2025 - Personal academic tracking site</p>
+      <p class="mb-1">© 2025 - <span id="year"></span> Personal academic tracking site</p>
       <p class="mb-0">
         Disclaimer: This website is for personal use only and is not an official source
         of college information.
       </p>
     </div>
   </footer>
-
+  <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 
