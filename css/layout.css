@@ -20,6 +20,7 @@ header {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 /* 
 /* SMOOTH TRANSITION FOR NAVBAR */
 /* #mainNavbar {
@@ -29,7 +30,7 @@ header {
 /* HIDDEN STATE */
 /* .nav-hidden {
   transform: translateY(-100%);
-} */ 
+} */
 
 /* Smiley Icon */
 .icon-smile {
@@ -155,11 +156,11 @@ header {
   font-family: Arial, sans-serif;
 }
 
-button {
+/* button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-}
+} */
 
 #counter {
   font-size: 24px;
@@ -197,3 +198,21 @@ footer {
   font-size: 0.85rem;
   color: #6c757d;
 }
+
+/* party button */
+
+#partyButton {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.1s;
+}
+
+#partyButton:active {
+  transform: scale(0.95);
+}
+/* end of party button */

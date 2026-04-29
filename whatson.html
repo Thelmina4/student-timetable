@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/layout.css">
 
-
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
   <!--Version infomation
     File: deadlines2.html
     Author: Thelma Clarke
@@ -908,7 +908,7 @@
 
             <br><br>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it</button>
+              <button id="partyButton" type="button"  data-bs-dismiss="modal">Got it</button>
             </div>
 
           </div>
@@ -927,6 +927,19 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+      <script>
+        const button = document.getElementById('partyButton');
+
+        button.addEventListener('click', () => {
+            // 2. Trigger the confetti/streamer effect
+            confetti({
+                particleCount: 150, // Number of streamers
+                spread: 100,        // How wide they go
+                origin: { y: 0.6 }, // Slightly lower than center
+                colors: ['#ff4757', '#2ed573', '#1e90ff', '#ffa502']
+            });
+        });
+    </script>
 
 </body>
 
