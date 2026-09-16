@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homework Deadlines - StudyTrack</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20'%3E📅%3C/text%3E%3C/svg%3E">
+
+  <!-- Bootstrap CSS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- next line has to be in the head -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+  <!--Version infomation
+    File: deadlines.html
+    Author: Thelma Clarke
+    
+    Creation: 10th Jan 2026
+    Last Modified: 16/09/2026
+    Description: Personal Project; Make a page that the students can see important dates
+    https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this 
+    -->
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<!-- Put header before the main tag -->
+    <!-- Header -->
+    <div id="header"></div>
+    <!-- END Header -->
+
+
+  <main class="flex-fill">
+    <div class="container my-4">
+
+      <!-- Width-constrained wrapper -->
+      <div class="content-wrapper">
+        <!-- Module Card -->
+
+        <div class="intro-card p-3 shadow-sm mb-3" id="homework">
+          <h1 class="h5 mb-0">&#x1f4da COMSCI2 SEMESTER 2 - Labs Deadlines </h1>
+        </div>
+
+        <!-- CSC1018 Logic -->
+        <div class="intro-card p-3 shadow-sm mb-3">
+          <h2 class="h6 mb-2">CSC1018 Logic</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <strong>Labs: </strong>Wednesdays 10am - 11am<br>
+                  <small class="text-muted">Location: </small>GLA.LG26, GLA.L128, GLA.L114<br>
+                  <small class="text-muted">Due: </small>No due date. But he said that wk3 labs are very important for
+                  learning recursion<br>
+                  <small class="text-muted">Link: <a
+                      href="https://loop.dcu.ie/course/view.php?id=75063">Loop</a></small>
+                </div>
+                <span class="badge bg-danger">NOT Graded</span>
+              </div>
+            </li>
+            <!-- br -->
+            <!-- <li class="list-group-item px-0">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <strong>Assignment</strong><br>
+                <small class="text-muted">Due: Tuesdays 9am</small><br>
+                <small class="text-muted">Estimated time: 1 -2 hours</small><br>
+                <small class="text-muted">Link: <a href="#">Loop</a></small>
+              </div>
+              <span class="badge bg-secondary">Graded</span>
+            </div>
+          </li>
+           -->
+          </ul>
+        </div>
+        <!-- CSC1021 Operating Systems -->
+        <div class="intro-card p-3 shadow-sm mb-3">
+          <h2 class="h6 mb-2">CSC1021 Operating Systems</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <strong>Labs: </strong>Tuesdays 9am - 11am<br>
+                  <small class="text-muted">Location: </small>GLA.L114, GLA.LG25, GLA.L101<br>
+                  <small class="text-muted">Due: </small>No due date<br>
+                  <small class="text-muted">Link: <a
+                      href="https://loop.dcu.ie/course/view.php?id=75077">Loop</a></small>
+                </div>
+                <span class="badge bg-danger">NOT Graded</span>
+              </div>
+            </li>
+            <!-- br -->
+            <!-- <li class="list-group-item px-0">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <strong>Assignment</strong><br>
+                <small class="text-muted">Due: Tuesdays 9am</small><br>
+                <small class="text-muted">Estimated time: 1 -2 hours</small><br>
+                <small class="text-muted">Link: <a href="#">Loop</a></small>
+              </div>
+              <span class="badge bg-secondary">Graded</span>
+            </div>
+          </li>
+           -->
+          </ul>
+        </div>
+
+        <!-- CSC1031 Computer Programming 4 (Object Oriented Programming) -->
+        <div class="intro-card p-3 shadow-sm mb-3">
+          <h2 class="h6 mb-2">CSC1031 Computer Programming 4
+            (Object Oriented Programming)</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <strong>Labs: </strong>Fridays 2pm - 4pm<br>
+                  <small class="text-muted">Location: </small>GLA.LG27, GLA.L101, GLA.L114, GLA.L129<br>
+                  <small class="text-muted">Due: </small>End of the semester<br>
+                  <small class="text-muted">Link: <a
+                      href="https://csc1031.computing.dcu.ie/">computing.dcu.ie</a></small><br>
+                  <small class="text-muted">Einstein: <a
+                      href="https://csc1031.computing.dcu.ie/einstein/">Einstein</a></small>
+                </div>
+                <span class="badge bg-success">Graded</span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- CSC1022 Introduction to Databases -->
+        <div class="intro-card p-3 shadow-sm mb-3">
+          <h2 class="h6 mb-2">CSC1022 Introduction to Databases</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <strong>Labs: </strong>LG25, LG26, L128, L129<br>
+                  <small class="text-muted">Due: </small>No due date<br>
+                  <small class="text-muted">Link: <a
+                      href="https://loop.dcu.ie/course/view.php?id=75078">Loop</a></small>
+                </div>
+                <span class="badge bg-danger">NOT Graded</span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <!-- CSC1029 Software Testing -->
+        <div class="intro-card p-3 shadow-sm mb-3">
+          <h2 class="h6 mb-2">CSC1029 Software Testing</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <strong>Labs: </strong>Wednesdays 11am - 1pm, on the weeks before a lab exam<br>
+                  <small class="text-muted">Due: </small>The same day<br>
+                  <small class="text-muted">Link: <a
+                      href="https://loop.dcu.ie/course/view.php?id=75082">Loop</a></small>
+                </div>
+                <span class="badge bg-danger">NOT Graded</span>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- CSC1040 Full Stack Development -->
+        <div class="intro-card p-3 shadow-sm mb-3">
+          <h2 class="h6 mb-2">CSC1040 Full Stack Development</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <strong>Labs: </strong>Mondays at 11am<br>
+                  <small class="text-muted">Location: </small>GLA.L125, GLA.L101<br>
+                  <small class="text-muted">Due: TBC</small><br>
+                  <small class="text-muted">DCU Link: <a
+                      href="https://loop.dcu.ie/course/view.php?id=75104">Loop</a></small><br>
+                  <small class="text-muted">Website: <a
+                      href="https://www.computing.dcu.ie/~mscriney/csc1040/">www.computing.dcu.ie</a></small><br>
+                  <small class="text-muted">His Project: <a
+                      href="https://gitlab.computing.dcu.ie/mscriney1/csc1040-2026">GitLab</a></small>
+                </div>
+                <span class="badge bg-danger">NOT Graded</span>
+              </div>
+            </li>
+            <!-- <li class="list-group-item px-0">
+<div class="d-flex justify-content-between align-items-start">
+<div>
+<strong>Labs</strong><br>
+<small class="text-muted">Due: Tuesdays 9am</small><br>
+<small class="text-muted">Estimated time: 1 - 2 hours</small><br>
+<small class="text-muted">Link: <a href="#">Moodle</a></small>
+</div>
+<span class="badge bg-secondary">Graded</span>
+</div>
+</li> -->
+          </ul>
+        </div>
+
+        <!-- Semester 2 Exam & Assignments -->
+
+        <div class="intro-card p-3 shadow-sm mb-3" id="exams-projects">
+          <h1 class="h5 mb-0">&#x1f4da COMSCI2 - Semester 2 Exam & Assignments</h1>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="semesterAccordion">
+
+          <!-- Week 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week1-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week1"
+                aria-expanded="false" aria-controls="week1">
+                Week 1: Jan 12th - 17th
+              </button>
+            </h2>
+            <div id="week1" class="accordion-collapse collapse" aria-labelledby="week1-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1018 Logic</h3>
+                  <p class="mb-1"><strong>What:</strong> No Labs or Lectures this week</p>
+                </div>
+
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1021 Operating Systems</h3>
+                  <p class="mb-1"><strong>What:</strong> No Lab Tuesday 9-11am</p>
+                </div>
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1029 Software Testing</h3>
+                  <p class="mb-1"><strong>What:</strong> No Lab Wednesday 11am-1pm</p>
+                  <small class="text-muted">(This means we don't have anything on Wednesday)</small>
+                </div>
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1040 Full Stack Development</h3>
+                  <p class="mb-1"><strong>What:</strong> Lecture starts at 9.30am on Thursday</p>
+                </div>
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1022 Introduction to Databases</h3>
+                  <p class="mb-1"><strong>What:</strong> Lecture starts at 10am this Friday<small class="text-muted">
+                      (instead of 9am)</small></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 2 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week2-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week2"
+                aria-expanded="false" aria-controls="week2">
+                Week 2: Jan 19th - 24th
+              </button>
+            </h2>
+            <div id="week2" class="accordion-collapse collapse" aria-labelledby="week2-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <p class="text-muted mb-0">No special dates added yet.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 3 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week2-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week3"
+                aria-expanded="false" aria-controls="week3">
+                Week 3: Jan 26th - 31st
+              </button>
+            </h2>
+            <div id="week3" class="accordion-collapse collapse" aria-labelledby="week3-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <p class="text-muted mb-0">No special dates added yet.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Week 4 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week4-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week4"
+                aria-expanded="false" aria-controls="week4">
+                Week 4: Feb 2nd - 7th
+              </button>
+            </h2>
+            <div id="week4" class="accordion-collapse collapse" aria-labelledby="week4-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <p class="text-muted mb-0">No special dates added yet.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week 5 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week5-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week5"
+                aria-expanded="false" aria-controls="week5">
+                Week 5: Feb 9th - 14th
+              </button>
+            </h2>
+            <div id="week5" class="accordion-collapse collapse" aria-labelledby="week5-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">Exam results out on the 11th</h3>
+                  <p class="mb-1"><strong>Where:</strong> We will get sent out a link</p>
+                  <small class="text-muted">Results will be available online for 30 days after they have been published.
+                  </small>
+                </div>
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">Databases lab exam on the 13th</h3>
+                  <p class="mb-1"><strong>Where: </strong>labs LG25, LG26, L129, TBC if there are specific rooms that we
+                    must go to</p>
+                  <p class="mb-1"><strong>Topics: </strong> Relational Model & Algebra (15%)</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted">15 questions. 20 mins to solve during the lab time</small><br>
+                  <small class="text-muted">Starts 5 mins after the lab starts</small><br>
+                  <small class="text-muted">Sample quiz on loop. </small><br>
+                  <small class="text-muted">Get a question right, <strong>gain</strong> 1 point. </small><br>
+                  <small class="text-muted">Get a question wrong, <strong>lose</strong> 1 point </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Week 6 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week6-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week6"
+                aria-expanded="false" aria-controls="week6">
+                Week 6: Feb 16th - 21st
+              </button>
+            </h2>
+            <div id="week6" class="accordion-collapse collapse" aria-labelledby="week6-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1040 Full Stack Development</h3>
+                  <p class="mb-1"><strong>What:</strong>Backend exam</p>
+                  <p class="mb-1"><strong>Extra info:</strong></p>
+                  <small class="text-muted">Description: </small>Loop exam on Django theory/ rest apis and code<br>
+                  <small class="text-muted">Grade value: </small>40%<br>
+                  <small class="text-muted">Monday from 11.30-12.30</small><br>
+                  <small class="text-muted">You will be asked multiple choice questions on the theory of applications
+                    and will be asked to review code snippets and comment on their suitability.</small><br>
+                  <small class="text-muted">Remember all notes are available on the course webpage:
+                    https://www.computing.dcu.ie/~mscriney/csc1040/lectures/week1/1-env-setup/ </small><br>
+                  <small class="text-muted">Also a sample loop exam is available.</small><br>
+                  <small class="text-muted">to manage numbers, a seating chart will be provided next week, make sure you
+                    are situated in the correct lab. </small><br>
+                  <small class="text-muted">Students who have registered accommodations with DLSS such as extra time
+                    will be accommodated for.</small><br>
+                </div>
+                <br>
+                <div id="paireddatabase" class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1022 Intro to Databases</h3>
+                  <p class="mb-1"><strong>What:</strong>CA2 Assignment - Take Home/Pair: ER Models</p>
+                  <p class="mb-1"><strong>Extra info:</strong>You currently just need to put in your group choice</p>
+                  <small class="text-muted">Goal: </small>TBC<br>
+                  <small class="text-muted">Grade value: </small>20%<br>
+                  <small class="text-muted">Due date for pairings: </small>You must input your pair group by Friday Feb
+                  20th at 1pm<br>
+                  <small class="text-muted">Link to the excel sheet: </small><a
+                    href="https://docs.google.com/spreadsheets/d/1TeJyh_N4bHujgoGf-lgXQ38Ss8xVW6vr1G0LUcteiV0/edit?usp=sharing">Here</a><br>
+                  <small class="text-muted">Instructions for the assignment: </small><a
+                    href="https://loop.dcu.ie/pluginfile.php/6522417/mod_resource/content/1/CA2%20Instructions.pdf">On
+                    loop</a><br>
+                  <small class="text-muted">Due date for assignment: </small>TBC<br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reading Week / Week 7-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="reading-week-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#readingWeek" aria-expanded="false" aria-controls="readingWeek">
+                Reading Week / Week 7: Feb 23rd - 28th
+              </button>
+            </h2>
+            <div id="readingWeek" class="accordion-collapse collapse" aria-labelledby="reading-week-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <p class="text-muted mb-0">Revision, catch-up, and exam preparation.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Week 8 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week8-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week8"
+                aria-expanded="false" aria-controls="week8">
+                Week 8: March 2nd - 7th
+              </button>
+            </h2>
+            <div id="week8" class="accordion-collapse collapse" aria-labelledby="week8-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">PROLOG lab exam on Wednesday, 4th of March at 10am</h3>
+                  <p class="mb-1"><strong>Where: </strong>labs L114, L128 and LG26</p>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>50% of the Continuous Assessment mark, and hence
+                    25% to your overall module mark. </p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted">You <b>must</b> have your Student ID available for inspection.</small><br>
+                  <small class="text-muted">It is a closed book exam. You are not allowed any notes. You are allowed to
+                    use a single blank A4 page for rough work.</small><br>
+                  <small class="text-muted">You must use the lab machines for the lab exam. You cannot use your own
+                    laptop (unless special prior arrangement is made).</small><br>
+                  <small class="text-muted">You must login to a special Windows student account (details provided on the
+                    day in the lab).</small><br>
+                  <small class="text-muted">You will need to be familiar with an editor (Notepad or Notepad++) on
+                    Windows, opening a command prompt and running SWI Prolog (swipl).</small><br>
+                  <small class="text-muted">You will not have access to the internet other than a site called Lockbox,
+                    which you will use to submit your answers.</small><br>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1021 Operating Systems Simpleshell Assignment </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong> (Stage 1, Stage 2 and Stage 3) 20% of your
+                    overall mark for CSC1021.</p>
+                  <p class="mb-1"><strong>Grade Contribution Stage 1: </strong> (25 marks).</p>
+                  <ul>
+                    <li>Performance of internal commands and aliases (15 marks)</li>
+                    <li>Batch file support (5 marks)</li>
+                    <li>A basic readme file that explains the key commands (5 marks)</li>
+                  </ul>
+                  <p class="mb-1"><strong>Due Date for Stage 1: </strong>Sunday, 8th March 2026 23:59.</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted"></small>This assignment is complex in the directions. So follow the
+                  directions carefully<br>
+                  <small class="text-muted">Links: </small><a
+                    href="https://loop.dcu.ie/mod/assign/view.php?id=2869985">Loop assignment page</a><br>
+                  <small class="text-muted">Links: </small><a
+                    href="https://gitlab.computing.dcu.ie/healygr/2026-simpleshell">Graham Healy's GitLab 2026
+                    Simpleshell</a><br>
+                  <small class="text-muted">Stage 2: </small>More to follow about stages 2 and 3 soon. He has not
+                  finalised the project yet. This will be complete by 19.02.2026<br>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1022 Introdution to Databases CA2: ER Models </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>20% </p>
+
+                  <p class="mb-1"><strong>Due Date: </strong>Friday, 6 March 2026, 11:59 PM</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <p>
+                    <small class="text-muted">Links: </small><a
+                      href="https://loop.dcu.ie/pluginfile.php/6522417/mod_resource/content/1/CA2%20Instructions.pdf">Loop
+                      assignment details</a><br>
+                    <small class="text-muted">Links: </small><a
+                      href="https://loop.dcu.ie/pluginfile.php/6526731/mod_resource/content/3/CA2_groups_1022.pdf">CA2
+                      Groups & Assigned Topics</a><br>
+                    <small class="text-muted">Links: </small><a
+                      href="https://loop.dcu.ie/mod/assign/view.php?id=2873530">Loop Submission</a><br>
+
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1029 Software Testing Lab</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>0%</p>
+
+                  <p class="mb-1"><strong>Due Date for lab: </strong> TBC</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted"></small>This lab is not graded. But there will be a graded lab exam the week
+                  after. <br>Going on how the last one went, we pair up and submit the lab<br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Week 9 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week9-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#week9"
+                aria-expanded="false" aria-controls="week9">
+                Week 9: March 9th - 14th
+              </button>
+            </h2>
+            <div id="week9" class="accordion-collapse collapse" aria-labelledby="week9-heading"
+              data-bs-parent="#semesterAccordion">
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1029 Software Testing Lab EXAM</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>40%</p>
+
+                  <p class="mb-1"><strong>When: </strong> March 11th - During the lab</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted">Topics: </small>Covering topics from Weeks 4, 5, 6 and 7
+                  <small class="text-muted">The exams are closed book and have a mix of MCQ and text questions.
+                    A sample quiz is provided on Loop along with sample questions.
+                    Further sample questions are discussed during the lecture and lab sessions.
+                    Another source of sample question is past exam questions which can be found by
+                    searching the old module code CA267.</small>
+                  <small class="text-muted">For the lab quizzes, each page has 3 MCQs and one text question.
+                    Quizzes 1 and 3 will have 3 pages and quiz 2 will have 4 pages.
+                    Please follow all instructions carefully.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Week 10 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week10-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#week10" aria-expanded="false" aria-controls="week2">
+                Week 10: March 16th -22th
+              </button>
+            </h2>
+            <div id="week10" class="accordion-collapse collapse" aria-labelledby="week10-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1040 Full Stack Development</h3>
+                  <p class="mb-1"><strong>What: </strong>JavaScript exam</p>
+                  <small class="text-muted">Description: </small>Loop exam on JavaScript code<br>
+                  <small class="text-muted">Grade value: </small>20%<br>
+                  <small class="text-muted">When: </small>Monday 16th of March at 11.30am - 1 hour exam<br>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <p>Sample javaScript Exam up on loop</p><br>
+                  <p>MCQs and commenting on code.</p><br>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1022 Introdution to Databases CA3: Dependency and normalisation </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>25% </p>
+
+                  <p class="mb-1"><strong>In Class: </strong>Friday, 20th March 2026, 11:00 AM in the labs</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <a href="https://dcu.guruarchive.com/">GURU Archive</a>Look up CA119 -> Data Science and Databases
+                  exams -> q3 & q4
+                  <p>Get to the room by 10.45am <br>
+                    No negative marking <br>
+                    don't just read the slides <br>
+                    have to practice them too.<br>
+                    Will need to explain how I would break the table down to create 1, 2, & 3 NF<br>
+                    there will be 2 qs on dependency and 2 on normalisation<br>
+                    upload 1 file onto the submit<br>
+                    will be given a hard copy of the exam too<br>
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1021 Operating Systems Simpleshell Assignment </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong> (Stage 1, Stage 2 and Stage 3) 20% of your
+                    overall mark for CSC1021.</p>
+                  <p class="mb-1"><strong>Grade Contribution Stage 2: </strong> (45 marks).</p>
+                  <ul>
+                    <li>External command functionality (10 marks)</li>
+                    <li>I/O redirection (15 marks)</li>
+                    <li>Background execution (15 marks)</li>
+                    <li>A extended readme file (5 marks) - see “user manual” section for requirements for Stage 2.</li>
+                  </ul>
+                  <p class="mb-1"><strong>Due Date for Stage 2: </strong>Sunday, 22nd March 2026 23:59 PM.</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted"></small>This assignment is complex in the directions. So follow the
+                  directions carefully<br>
+                  <small class="text-muted">Links: </small><a
+                    href="https://loop.dcu.ie/mod/assign/view.php?id=2869985">Loop assignment page</a><br>
+                  <small class="text-muted">Links: </small><a
+                    href="https://gitlab.computing.dcu.ie/healygr/2026-simpleshell">Graham Healy's GitLab 2026
+                    Simpleshell</a><br>
+                  <small class="text-muted">Stage 3: </small>Stage 3 (30 marks) - deadline to have deliverables in your
+                  repository: 2nd April 2026 23:59<br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Week 11 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week11-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#week11" aria-expanded="false" aria-controls="week11">
+                Week 11: March 23th - 29th
+              </button>
+            </h2>
+            <div id="week11" class="accordion-collapse collapse" aria-labelledby="week11-heading"
+              data-bs-parent="#semesterAccordion">
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1031 Computer Programming 4 (JAVA): Last In Class Quiz</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>5%</p>
+                  <p class="mb-1"><strong>When: </strong>Friday 27th March</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted"></small>This will be the last in class quiz<br>
+                </div>
+              </div>
+
+              <br>
+            </div>
+          </div>
+
+          <!-- Week 12 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week12-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#week12" aria-expanded="false" aria-controls="week12">
+                Week 12: March 30th - April 4th
+              </button>
+            </h2>
+            <div id="week12" class="accordion-collapse collapse" aria-labelledby="week12-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1029 Software Testing Lab</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>0%</p>
+
+                  <p class="mb-1"><strong>Due Date for lab: </strong> TBC</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted"></small>This lab is not graded. But there will be a graded lab exam the week
+                  after. <br>Going on how the last one went, we pair up and submit the lab<br>
+                </div>
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1021 Operating Systems: Lab Exam</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>10%</p>
+
+                  <p class="mb-1"><strong>When: </strong>Tuesday, 31st March 2026 from 09:25 to 10:30 AM</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted">Topics: </small>He will send out an email with our project topic .
+                  <p>multiple choice questionnaire will be made available on the CSC1021 Loop page with questions that
+                    you will need to complete and submit answers for (by 10:30 that day) <br>
+                    You must use the following Windows login for the lab exam: <br>
+                    username: TBC<br>
+                    password: TBC<br>
+                    <b>Room allocations: </b><br>
+                    If the first letter of your last name begins with:<br>
+                    A to G, then go to TBC<br>
+                    H to O, then go to TBC<br>
+                    P to Z, then go to TBC<br>
+                    <b>Will the continuous assessment lab exam be "open book"?</b><br> You will be able to access
+                    a limited selection of materials on the CSC1021 Loop page.<br>
+                    <b>What will be on the continuous assessment lab exam?</b><br>
+                    The lab exam will consist of multiple-choice questions based on the material covered in lectures and
+                    labs up to this point in the module. The questions are intended to assess your understanding of the
+                    core concepts discussed in class. You should review the lecture slides, lab material, and examples
+                    discussed during the module.<br>
+                    <b>Will there be a sample lab exam made available?</b><br>
+                    Yes, a sample lab exam will be made available in the section "(Sample) CSC1021 Continuous Assessment
+                    Lab Exam" <br>
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1021 Operating Systems Simpleshell Assignment </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong> (Stage 1, Stage 2 and Stage 3) 20% of your
+                    overall mark for CSC1021.</p>
+                  <p class="mb-1"><strong>Grade Contribution Stage 3: </strong> (30 marks).</p>
+                  <p class="mb-1"><strong>Due Date for Stage 3: </strong>Thursday 23:59pm 2nd April 2026.</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <p><b>* note that Stage 1 & Stage 2 deliverables will be linked with a Stage 3 deliverable, where
+                      failure to submit the stage 3 deliverable will result in reduced marks for Stage 1 & Stage 2.</b>
+                  </p>
+                  <small class="text-muted"></small>This assignment is complex in the directions. So follow the
+                  directions carefully<br>
+                  <small class="text-muted">Links: </small><a
+                    href="https://loop.dcu.ie/mod/assign/view.php?id=2869985">Loop assignment page</a><br>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Week 13 (template) -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="week13-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#week13" aria-expanded="false" aria-controls="week13">
+                Week 13: April 6th - 11th
+              </button>
+            </h2>
+            <div id="week13" class="accordion-collapse collapse" aria-labelledby="week13-heading"
+              data-bs-parent="#semesterAccordion">
+
+              <!-- CSC1029 Software Testing Lab EXAM -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1029 Software Testing Lab EXAM</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>30%</p>
+
+                  <p class="mb-1"><strong>When: </strong> April 8th - During the lab</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted">Topics: </small>Covering topics from Weeks 8, 10, & 11 <br>
+                  <small class="text-muted">Exam length: </small>45 minutes duration.
+                  <p>The exams are closed book and have a mix of MCQ and text questions.
+                    A sample quiz is provided on Loop along with sample questions.
+                    Further sample questions are discussed during the lecture and lab sessions.
+                    Another source of sample question is past exam questions which can be found by
+                    searching the old module code CA267.</p>
+                  <p>For the lab quizzes, each page has 3 MCQs and one text question.
+                    Quizzes 1 and 3 will have 3 pages and quiz 2 will have 4 pages.
+                    Please follow all instructions carefully.</p>
+                </div>
+
+              </div>
+              <!-- CSC1022 Introdution to Databases -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1022 Introdution to Databases CA4: SQL Exam </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>40%</p>
+
+                  <p class="mb-1"><strong>When: </strong>Friday the 10th of April</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <p>There will be a mock exam that we can do at home<br>
+                    He will upload the ans to the labs before the final mock exam<br>
+                    <i>More info to come</i>
+                  </p>
+                </div>
+
+              </div>
+              <!-- CSC1031 Computer Programming 4 -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1031 Computer Programming 4 (JAVA): UML project</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>15%</p>
+
+                  <p class="mb-1"><strong>When: </strong>10th of April</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <small class="text-muted">Topics: </small>Search your name on the following link and it will bring
+                  you to your project topic<br>
+                  <small class="text-muted">Released: </small><a
+                    href="https://csc1031.computing.dcu.ie/CA.html">Assigment link</a>
+                  <p>Each person will be assigned a different topic <br>
+                    Can do it on our own topics, but we <b>MUST</b> ask in advance.<br>
+                    Hand drawn on A3 or A4.
+                    <b>DO NOT IMPLEMENT CODE, HE WILL THROW IT OUT</b><br>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Study Week / week 14 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="study-week-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#studyWeek" aria-expanded="false" aria-controls="studyWeek">
+                Study Week: April 13th - 18th
+              </button>
+            </h2>
+            <div id="studyWeek" class="accordion-collapse collapse" aria-labelledby="study-week-heading"
+              data-bs-parent="#semesterAccordion">
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1018 logic: Prolog assignment </h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>25%</p>
+
+                  <p class="mb-1"><strong>Due: </strong>Monday the 13th of April @ 10AM</p>
+                  <p class="mb-1"><strong>Extra info: </strong></p>
+                  <p>Link to the assignment: <a
+                      href="https://loop.dcu.ie/course/view.php?id=75063&section=5">here</a><br>
+                    <!-- He will upload the ans to the labs before the final mock exam<br>
+                    <i>More info to come</i> -->
+                  </p>
+                </div>
+
+                <!-- <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">Project Preparation</h3>
+                  <p class="mb-1"><strong>When:</strong> All week</p>
+                  <p class="mb-1"><strong>Estimated time:</strong> 10-15 hours</p>
+                  <p class="mb-1"><strong>Link:</strong> <a href="#">Project Brief</a></p>
+                  <span class="badge bg-warning text-dark">Ungraded</span>
+                </div>
+              </div> -->
+
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm mb-3">
+                  <h3 class="h6 mb-2">CSC1031 Computer Programming 4: Labs Due</h3>
+                  <p class="mb-1"><strong>Grade Contribution: </strong>20%</p>
+                  <p class="mb-1"><strong>Due: </strong>Friday the 17th of April @ TBC</p>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Exams Week 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="exams1-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#examsWeek1" aria-expanded="false" aria-controls="examsWeek1">
+                Exam Week 1: April 20th - 25th
+              </button>
+            </h2>
+            <div id="examsWeek1" class="accordion-collapse collapse" aria-labelledby="exams1-heading"
+              data-bs-parent="#semesterAccordion">
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1040 Full Stack Development</h3>
+                  <p class="mb-1"><strong>What: </strong>Full Stack Exam</p>
+                  <small class="text-muted">Description: </small>Exam on full stack applications<br>
+                  <small class="text-muted">Grade value: </small>40%<br>
+                  <small class="text-muted">Details: </small>Monday 20th April 12:00-14:00 React Exam, LG26, L101,
+                  L114.<br>
+                </div>
+
+              </div>
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1040 Full Stack Development - RESITS</h3>
+                  <p class="mb-1"><strong>What: </strong>Full Stack RESIT Exams</p>
+                  <small class="text-muted">When: </small>Wednesday 22nd April 11:00-13:00 - Django Exam , L101 (for
+                  those who could not make the original exam).<br>
+                  <small class="text-muted">When: </small>Friday 24th April 11:00-13:00 JS Lab exam, L101 (for those who
+                  could not make the original lab exam).<br>
+                </div>
+              </div>
+
+
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1022 Intro to Databases - CA4 RESIT exam </h3>
+                  <small class="text-muted">Where: </small> LG27.<br>
+                  <small class="text-muted">When: </small>Tuesday, 21st April, 1-2p.m. <br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exams Week 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="exams2-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#examsWeek2" aria-expanded="false" aria-controls="examsWeek2">
+                Exam Week 2: April 27th - May 2nd
+              </button>
+            </h2>
+            <div id="examsWeek2" class="accordion-collapse collapse" aria-labelledby="exams2-heading"
+              data-bs-parent="#semesterAccordion">
+              <!-- Java -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1031 Cptr Prog 4(Obj Oriented Prog)</h3>
+                  <p class="mb-1"><strong>When: </strong>Tuesday 28th April @ 9:30 AM</p>
+                  <p class="mb-1"><strong>Grade value: </strong>50%</p>
+                  <p class="mb-1"><strong>Where: </strong>Glasnevin, check the timetable for your room</p>
+                  <p class="mb-1"><strong>Duration: </strong>2 Hours</p>
+                  <p class="mb-1"><strong>Exam Number: </strong>Check the timetable for your Exam Number</p>
+                </div>
+              </div>
+              <!-- Logic -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1018 Logic</h3>
+                  <p class="mb-1"><strong>When: </strong>Wednesday 29th April @ 9:30 AM</p>
+                  <p class="mb-1"><strong>Grade value: </strong>50%</p>
+                  <p class="mb-1"><strong>Where: </strong>Check the timetable for your room</p>
+                  <p class="mb-1"><strong>Duration: </strong>2 Hours</p>
+                  <p class="mb-1"><strong>Exam Number: </strong>Check the timetable for your Exam Number</p>
+                </div>
+              </div>
+
+              <!-- Operating Systems -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+                  <h3 class="h6 mb-2">CSC1021 Operating Systems</h3>
+                  <p class="mb-1"><strong>When: </strong>Thursday 30th April @ 9:30 AM</p>
+                  <p class="mb-1"><strong>Grade value: </strong>70%</p>
+                  <p class="mb-1"><strong>Where: </strong>Check the timetable for your room</p>
+                  <p class="mb-1"><strong>Duration: </strong>2 Hours</p>
+                  <p class="mb-1"><strong>Exam Number: </strong>Check the timetable for your Exam Number</p>
+                </div>
+              </div>
+
+              <!-- check out timetable -->
+              <div class="accordion-body">
+                <div class="intro-card p-3 shadow-sm">
+
+                  <p>Link to the timetables: </p>
+                  <a href="https://mytimetable.dcu.ie/" target="_blank" class="btn btn-sm btn-primary w-100">Go to
+                    MyTimetable</a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  FOR THE UPDATES POPUP -->
+    <div class="modal fade" id="updatesModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">Last updated on: <span id="updateDate">30/04/2026</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+
+
+            <h3 class="h6 mb-2">That's it guys. We have finished for the summer. </h3>
+            <!-- &#x1f601; -->
+            <p>Semester Two exam results will be available <b>Wednesday 3rd June 2026.</b> </p>
+            <p>See you in 3rd year!!! 😁</p>
+            <!-- <hr> -->
+            <div class="modal-footer">
+              <!-- <p>One more day until we are </p>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done!</button> -->
+              <p>We are officialy... </p>
+              <button id="partyButton" type="button" data-bs-dismiss="modal">Done!</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </main>
+  <div id="footer"></div>
+
+  <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+  <!-- JS At the very bottom of .html -->
+  <!-- <script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const yearElement = document.getElementById("year");
+      if (yearElement) {
+          yearElement.textContent = new Date().getFullYear();
+      }
+  });
+</script> -->
+
+  <!-- Scripts should come *after* HTML elements they use -->
+  <script src="../../js/script.js"></script>
+  <script src="../../js/data.js"></script>
+  <script src="../../js/components.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
